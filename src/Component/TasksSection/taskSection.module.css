@@ -1,0 +1,13 @@
+.TaskSection {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* .Task {
+    margin: 0;
+    padding: 0;
+} */

@@ -1,0 +1,13 @@
+.Layout {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 3.7em auto;
+    height: 100%;
+}
+
+.Container {
+    box-sizing: border-box;
+    width: 100%;
+    /* margin: 0em auto; */
+    height: 100%;
+}

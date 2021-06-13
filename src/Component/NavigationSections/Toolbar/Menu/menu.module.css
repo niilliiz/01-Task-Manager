@@ -1,0 +1,25 @@
+.Menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70px;
+    height: 80%;
+    border-radius: 5px;
+    margin: auto 20px auto 190px;
+    /* border: 1px solid #3f3f3f; */
+}
+
+.Menu div {
+    margin: 0px auto;
+    width: 60%;
+    /* margin-left: 20px; */
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.Menu:hover {
+    background-color: #333;
+    opacity: 0.6;
+    cursor: pointer;
+}

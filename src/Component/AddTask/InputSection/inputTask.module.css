@@ -1,0 +1,28 @@
+.InputSection {
+    margin-top: 20px;
+    box-sizing: border-box;
+    position: relative;
+    top: 00px;
+    left: 260px;
+    width: 600px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.InputTitle {
+    padding: 1em;
+    border: 1px solid #3f3f3f;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 35px;
+    width: 100%;
+}
+
+.InputTask_button {
+    box-sizing: border-box;
+    display: flex;
+    width: 250px;
+    height: 40px;
+    margin-top: 3px;
+}

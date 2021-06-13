@@ -1,0 +1,51 @@
+.AddTaskBtn {
+    margin: 0;
+    cursor: pointer;
+    width: 70%;
+    height: 30px;
+    margin-top: 2em;
+    font-size: 14px;
+    display: flex;
+    position: relative;
+    top: 00px;
+    left: 260px;
+    margin-bottom: 0;
+}
+
+.Label {
+    color: #3c3c3c;
+    font-size: 16px;
+    margin-left: 6px;
+}
+
+.AddIcon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.fLine {
+    background-color: #3d3d3d;
+    transform: translate(1px, 8px);
+    width: 16px;
+    height: 1.3px;
+    border-radius: 3px;
+}
+
+.sLine {
+    border-radius: 3px;
+    background-color: #3d3d3d;
+    transform: translate(1px, 7.5px) rotate(90deg);
+    width: 15px;
+    height: 1.3px;
+}
+
+.AddButton:hover {
+    color: #3d3d3d;
+    font-weight: bold;
+}
+
+.Label:hover {
+    color: #3d3d3d;
+    font-weight: bolder;
+}

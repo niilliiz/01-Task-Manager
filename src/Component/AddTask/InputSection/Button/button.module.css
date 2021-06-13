@@ -1,0 +1,29 @@
+.Button {
+    margin: auto 3px;
+    width: 85px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+}
+
+.Button:hover {
+    /* width: 5.5em;
+    height: 3.5em; */
+}
+
+.Add {
+    background-color: #3c3c3c;
+    color: white;
+}
+
+.Cancel {
+    background-color: #aaa;
+    /* border: 2px solid #c2bf87; */
+    color: #3c3c3c;
+}
+
+.Button:disabled {
+    opacity: 0.5;
+}

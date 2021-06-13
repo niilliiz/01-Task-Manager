@@ -1,0 +1,73 @@
+.task_section {
+    margin-top: 12px;
+    box-sizing: border-box;
+    padding: 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: 50%;
+    height: 60px;
+    position: relative;
+    /* top: 00px; */
+    left: 260px;
+    color: #3c3c3c;
+    display: grid;
+    grid-template-columns: [c1] 30px [c2] auto [c3]30px[c4];
+    grid-template-rows: [r1] 25px [r2] 25px [r3];
+    gap: 5px 25px;
+    grid-template-areas: "completed title more" "completed title importan";
+    padding: 3px 10px 3px 5px;
+}
+
+.task_completed {
+    grid-column: c1/c2;
+    grid-row: r1/r3;
+    border: 1px solid #aaa;
+    grid-area: completed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eee;
+    place-self: center;
+}
+
+.task_completed:hover {
+    background-color: #777;
+}
+
+.task_tite {
+    grid-column: c2/c3;
+    grid-row: r1/r3;
+    grid-area: title;
+    place-self: start;
+}
+
+.task_more {
+    background: url("../../../asset/icon/more.svg") no-repeat;
+    grid-column: c3/c4;
+    grid-row: r1/r2;
+    grid-area: more;
+    border: none;
+    margin-right: 2px;
+}
+
+.task_more:hover {
+    background: url("../../../asset/icon/more.svg") no-repeat #eee;
+}
+
+.task_important {
+    background: url("../../../asset/icon/heart.svg") no-repeat;
+    grid-column: c3/c4;
+    grid-row: r2/r3;
+    grid-area: importan;
+    border: none;
+}
+
+.Completed {
+    opacity: 0.5;
+    background-color: #ddd;
+    border: 1px solid #eee;
+}
+
+.Completed .task_completed {
+    background-color: #333;
+}

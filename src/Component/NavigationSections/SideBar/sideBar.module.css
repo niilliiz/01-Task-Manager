@@ -1,0 +1,23 @@
+.SideBar {
+    background-color: #fafafa;
+    opacity: 1;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    /* transition: transform 0.1s step-end; */
+    border-radius: 5px;
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(-425%);
+    /* display: none; */
+}

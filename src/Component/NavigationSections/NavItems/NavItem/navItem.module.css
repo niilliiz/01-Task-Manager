@@ -1,0 +1,50 @@
+.navButton {
+    margin: 20px auto 5px auto;
+    display: flex;
+    border: none;
+    background-color: #fafafa;
+    width: 90%;
+    height: 30px;
+    /* border: 1px solid black; */
+}
+
+.inbox {
+    background: url("../../../../asset/icon/Tomorrow.svg") no-repeat;
+}
+
+.completed {
+    background: url("../../../../asset/icon/today.svg") no-repeat;
+}
+
+.navLabel {
+    font-size: 15px;
+    margin-left: 25px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.inbox-label {
+    color: #692fc2;
+}
+
+.completed-label {
+    color: #ad6200;
+}
+
+.navLabel span {
+    display: inline-block;
+    color: #777;
+    width: 50px;
+}
+
+.inbox-label span {
+    margin-left: 85px;
+}
+
+.completed-label span {
+    margin-left: 46px;
+}
+
+.navButton:hover {
+    background-color: #eee;
+}
