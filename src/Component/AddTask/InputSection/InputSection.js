@@ -3,22 +3,26 @@ import Button from "./Button/button";
 import { v4 } from "uuid";
 import Classes from "./inputTask.module.css";
 import AuthContext from "../../../Context/context";
+import axios from "../../../axios.orders";
 
 class InputSection extends Component {
   state = {
-    titleLength: 0,
+    title: false,
   };
-  newTask = { id: v4(), status: false, star: false, note: "" };
+  newTask = {};
   inputHandler = (e, type) => {
     this.newTask[type] = e.target.value;
-    let count = 0;
-    count++;
-    this.setState({ titleLength: count });
+    this.newTask.id = v4();
+    this.setState({ title: true });
   };
+  componentDidMount() {
+    axios
+      .get("https://to-do-list-a984b-default-rtdb.firebaseio.com/tasks.json")
+      .then((res) => (this.newTask = res.data));
+    console.log(this.newTask);
+  }
 
   render() {
-    console.log(this.newTask);
-
     return (
       <div className={Classes.InputSection}>
         <input
@@ -32,7 +36,7 @@ class InputSection extends Component {
           <AuthContext.Consumer>
             {(context) => (
               <Button
-                disabled={this.state.titleLength <= 0}
+                disabled={!this.state.title}
                 clicked={context.updatingTask}
                 newTask={this.newTask}
                 type="Add"

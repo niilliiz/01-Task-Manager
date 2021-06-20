@@ -30,11 +30,7 @@ class layout extends Component {
 
     this.setState({ inbox: toDoCound, completed: isDoCound });
   };
-  // componentDidUpdate = () => {
-  //   console.log("todo: " + this.state.todoList);
 
-  //   console.log("isDone: " + this.state.doneList);
-  // };
   render() {
     return (
       <div className={Classes.Layout}>
@@ -48,12 +44,6 @@ class layout extends Component {
           />
         </AuthContext.Provider>
 
-        {/* <SideBar
-          showSideBar={this.state.showSideDrawer}
-          closingSideBar={this.closingSideBarHandler}
-          todoList={this.state.todoList}
-          doneList={this.state.doneList}
-        /> */}
         <div className={Classes.Container}>
           <TaskManager
             isDoing={this.toDoListHandler}

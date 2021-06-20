@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Aux from "../../HOC/AUX/aux";
-// import Modal from "../../Component/UI/Modal/modal";
 import TaskSection from "../../Component/TasksSection//tasksSection";
 import AuthContext from "../../Context/context";
+// import withErrorHandler from "../../HOC/AUX/withErrorHandler";
+import axios from "../../axios.orders";
 
 class TaskManager extends Component {
   constructor(props) {
@@ -27,6 +28,10 @@ class TaskManager extends Component {
 
     const newTask = [...this.state.tasks, updatedtask];
     this.setState({ tasks: newTask, addingTask: false });
+    axios
+      .post("/tasks.json", updatedtask)
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
   };
 
   completeTaskHandler = (e, id) => {
@@ -43,9 +48,7 @@ class TaskManager extends Component {
     });
   };
 
-  componentDidUpdate() {
-    console.log(this.state.tasks);
-  }
+  componentDidMount() {}
   render() {
     return (
       <Aux>
@@ -63,18 +66,6 @@ class TaskManager extends Component {
             completedTask={this.state.completedTask}
           />
         </AuthContext.Provider>
-        {/* 
-        <div>
-          {this.state.tasks.map((task, i) => {
-            return (
-              <TaskSection
-                task={task}
-                key={i + task}
-                isDone={this.doneTaskHandler}
-              />
-            );
-          })}
-        </div> */}
       </Aux>
     );
   }

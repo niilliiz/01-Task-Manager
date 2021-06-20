@@ -12,22 +12,12 @@ const tasksSection = ({ addTask, tasks, taskCompleted, completedTask }) => {
     <Task key={task.id} task={task} />
   ));
 
-  // console.log(typeof task.id);
   return (
     <main className={Classes.TaskSection}>
       <div className={Classes.Task}>{eachTask}</div>
       {!addTask ? <AddTaskBtn /> : null}
       {addTask ? <InputSection /> : null}
       <div>{doneTask}</div>
-      {/* <Task
-        id={task.id}
-        isDone={task.isDone}
-        title={task.title}
-        detail={task.detail}
-        time={task.time}
-        color={task.color}
-        clicked={isDone}
-      />{" "} */}
     </main>
   );
 };

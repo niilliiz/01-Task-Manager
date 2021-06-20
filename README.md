@@ -1,22 +1,19 @@
-# To Do list
+# general Info
 
-this is a simple, in progress ToDo app,
+this project is simple To Do List created with [Create React App] and firebase.google is also used.
 
-This project was powered by [Create React App](https://github.com/facebook/create-react-app).
+## Setup
 
-## Available Scripts
+To run this project, install it locally using npm:
 
-In the project directory, you can run:
+`npm i`
 
-### `npm i`
-
-### `npm start`
+`npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### future changes:
 
-1- to be saved on local storage
-2- ability to change the title
-3- add more details like priority, schedule, comment to each task
+1- ability to edit the task and add more features to it like adding note, or priority
+2- App routing
